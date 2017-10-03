@@ -37,3 +37,8 @@ $ git push heroku dev:master
 $ sudo cp Downloads/devf-batch16.pem .ssh
 $ ssh -i "devf-batch16.pem" ubuntu@ec2-34-209-190-102.us-west-2.compute.amazonaws.com
 ```
+
+
+# AWS
+
+./manage.py migrate --settings=goodreads.settings.production
