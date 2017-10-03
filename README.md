@@ -41,4 +41,7 @@ $ ssh -i "devf-batch16.pem" ubuntu@ec2-34-209-190-102.us-west-2.compute.amazonaw
 
 # AWS
 
+https://github.com/antikytheraton/django-deploy-starter-kit
+
 ./manage.py migrate --settings=goodreads.settings.production
+./manage.py collectstatic --settings=goodreads.settings.production
