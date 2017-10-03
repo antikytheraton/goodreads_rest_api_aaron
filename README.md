@@ -45,3 +45,8 @@ https://github.com/antikytheraton/django-deploy-starter-kit
 
 ./manage.py migrate --settings=goodreads.settings.production
 ./manage.py collectstatic --settings=goodreads.settings.production
+
+```bash
+$ sudo systemctl daemon-reload
+$ sudo systemctl restart gunicorn
+```
