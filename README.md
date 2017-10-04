@@ -49,4 +49,12 @@ https://github.com/antikytheraton/django-deploy-starter-kit
 ```bash
 $ sudo systemctl daemon-reload
 $ sudo systemctl restart gunicorn
+$ sudo systemctl enable gunicorn
+$ sudo systemctl status gunicorn
+
+$ sudo vim /etc/nginx/sites-available/api
 ```
+
+# Jenkins
+- github integration plugin
+- slack notification plugin
