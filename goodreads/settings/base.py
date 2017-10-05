@@ -47,7 +47,8 @@ OUR_APPS = [
 
 THIRD_PACKAGE_APPS = [
     'rest_framework',
-    'django_filters'
+    'django_filters',
+    'corsheaders',
 ]
 
 
@@ -56,6 +57,7 @@ INSTALLED_APPS = DJANGO_APPS + OUR_APPS + THIRD_PACKAGE_APPS
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -150,3 +152,14 @@ JWT_AUTH = {
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(os.getcwd(), 'media')
 CURRENT_HOST = "http://localhost:8000"  #os.getenv('current_host')
+
+CORS_ALLOW_METHODS = (
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+)
+
+CORS_ORIGIN_ALLOW_ALL=True
