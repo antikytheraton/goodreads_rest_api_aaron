@@ -3,7 +3,8 @@ import os
 import sys
 
 # config for AWS
-import dotenv
+# import dotenv
+from dotenv import load_dotenv
 
 try:
 
