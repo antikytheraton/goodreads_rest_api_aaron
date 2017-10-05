@@ -75,3 +75,4 @@ $ python manage.py collectstatic --noinput --settings=goodreads.settings.product
 
 
 
+lol
