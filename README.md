@@ -72,3 +72,5 @@ $ pip install -r requirements.txt           # Install or upgrade dependencies
 $ python manage.py migrate --settings=goodreads.settings.production               # Apply South's database migrations
 $ python manage.py collectstatic --noinput --settings=goodreads.settings.production  # Collect static files
 ```
+
+
