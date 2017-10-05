@@ -21,7 +21,7 @@ heroku create goodreads-devf-aaron
 heroku open
 heroku run python manage.py migrate
 heroku run python manage.py createsuperuser
-heroku run python manage.py loaddata author.json 
+heroku run python manage.py loaddata author.json
 heroku run python manage.py loaddata books.json
 ```
 ## para deployear un branch de git al master de heroku
@@ -58,3 +58,17 @@ $ sudo vim /etc/nginx/sites-available/api
 # Jenkins
 - github integration plugin
 - slack notification plugin
+
+```bash
+#!/bin/bash
+$ source /home/ubuntu/goodreads/entorno/bin/activate
+$ cd /var/lib/jenkins/workspace/Goodreads
+$ export DJANGO_SETTINGS_MODULE=goodreads.settings.production
+$ export SECRET_KEY=of2yq436mgcbhvgs4sp5r2xhc4f68uffd
+$ export DB_NAME=good_db
+$ export DB_USER=good_admin
+$ export DB_PASSWORD=good2017
+$ pip install -r requirements.txt           # Install or upgrade dependencies
+$ python manage.py migrate --settings=goodreads.settings.production               # Apply South's database migrations
+$ python manage.py collectstatic --noinput --settings=goodreads.settings.production  # Collect static files
+```
