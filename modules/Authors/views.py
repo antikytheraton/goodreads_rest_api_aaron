@@ -16,7 +16,7 @@ class ListAuthor(APIView):
         get:
         Return a list of authors
         post:
-        Create an author in scratch
+        Create an author from scratch
     """
     #
 

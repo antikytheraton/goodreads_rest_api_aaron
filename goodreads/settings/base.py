@@ -153,6 +153,8 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(os.getcwd(), 'media')
 CURRENT_HOST = "http://localhost:8000"  #os.getenv('current_host')
 
+# Front
+
 CORS_ALLOW_METHODS = (
     'DELETE',
     'GET',

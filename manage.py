@@ -3,15 +3,15 @@ import os
 import sys
 
 # config for AWS
-# import dotenv
-# # from dotenv import load_dotenv
+import dotenv
+# from dotenv import load_dotenv
 
-# try:
+try:
 
-#     dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
-#     load_dotenv(dotenv_path)
-# except:
-#     pass
+    dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
+    load_dotenv(dotenv_path)
+except:
+    pass
 #--------------------------------------
 
 if __name__ == "__main__":
