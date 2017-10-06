@@ -48,7 +48,7 @@ OUR_APPS = [
 THIRD_PACKAGE_APPS = [
     'rest_framework',
     'django_filters',
-    'corsheaders',
+    # 'corsheaders', '''Front config'''
 ]
 
 
@@ -153,15 +153,15 @@ MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(os.getcwd(), 'media')
 CURRENT_HOST = "http://localhost:8000"  #os.getenv('current_host')
 
-# Front
+# Front config
 
-CORS_ALLOW_METHODS = (
-    'DELETE',
-    'GET',
-    'OPTIONS',
-    'PATCH',
-    'POST',
-    'PUT',
-)
+# CORS_ALLOW_METHODS = (
+#     'DELETE',
+#     'GET',
+#     'OPTIONS',
+#     'PATCH',
+#     'POST',
+#     'PUT',
+# )
 
-CORS_ORIGIN_ALLOW_ALL=True
+# CORS_ORIGIN_ALLOW_ALL=True
