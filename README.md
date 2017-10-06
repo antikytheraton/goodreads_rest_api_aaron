@@ -78,3 +78,4 @@ $ python manage.py collectstatic --noinput --settings=goodreads.settings.product
 # Holi de nuevo AWS
 
 
+- lol
